@@ -1,4 +1,4 @@
-$('body').append('<div class="print-container"></div>')
+$('body').append('<div class="print-container"></div>');
 
 $('.md-modal').on('click', /* PREVIEW BTN */, function(){
   var repo = $('.js-current-repository').text()
