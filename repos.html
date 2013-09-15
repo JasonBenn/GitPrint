@@ -1,0 +1,47 @@
+<!doctype html>
+ 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>GitPrint - Repos</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <link rel="stylesheet" href="css/main.css" />
+  <script>
+  $(function() {
+    $( "#sortable" ).sortable({
+      placeholder: "ui-state-highlight"
+    });
+    $( "#sortable" ).disableSelection();
+  });
+  </script>
+</head>
+<body>
+<div class="container"> 
+  <div class="sidebar"> 
+  <ul id="sortable">
+    <li class="ui-state-default">node-browserify</li>
+    <li class="ui-state-default">dnode</li>
+    <li class="ui-state-default">node-optimist</li>
+    <li class="ui-state-default">GitPrint</li>
+  </ul>
+  </div>
+<div class="table-of-contents">
+  <div id="repo-contents">
+    <section class="main">
+            <div id="dd" class="wrapper-dropdown-4">Repo Contents
+              <ul class="dropdown">
+                <li><input type="checkbox" id="el-1" name="el-1" value="donut"><label for="el-1">README</label></li>
+                <li><input type="checkbox" id="el-2" name="el-2" value="neighbour"><label for="el-2">index.js</label></li>
+                <li><input type="checkbox" id="el-3" name="el-3" value="T-rex"><label for="el-3">package.json</label></li>
+              </ul>
+          ​</div>
+    </section>
+  </div>
+</div>
+</div>
+ 
+ 
+</body>
+</html>
