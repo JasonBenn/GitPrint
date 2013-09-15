@@ -17,6 +17,23 @@ h1 {
   margin: 0.67em 0
 }
 
+header {
+	width: 40%;
+	margin: 0 auto;
+}
+
+header img {
+	max-height: 120px;
+	margin-top: 10px;
+}
+
+.logo {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 4em;
+	baseline-shift : sub;
+	/*vertical-align: top;*/
+}
+
 #sortable { 
 	list-style-type: none; 
 	margin: 0; 
@@ -27,9 +44,10 @@ h1 {
 
 #sortable li { 
 	margin: 5px 5px 5px 5px; 
-	padding: 5px; 
-	font-size: 1em; 
-	height: 1.5em; 
+	/*padding: 5px; */
+	font-size: 1.25em; 
+	padding-bottom: 5px;
+	/*height: 1.7em; */
 	width: 25%; 
 	min-width: 150px;
 
@@ -57,14 +75,47 @@ html>body #sortable li { height: 1.5em; line-height: 1.2em; }
 #repo-contents {
 	float: left;
 	width: 70%;
+}
 
+.description {
+	display: inline-block;
+	margin-left: 75px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1
+}
+h1 {
+  font-size: 30px
+}
+h2 {
+  font-size: 21px
+}
+h3 {
+  font-size: 16px
+}
+h4 {
+  font-size: 14px
+}
+h5 {
+  font-size: 12px
+}
+h6 {
+  font-size: 11px
 }
 
 h3 {
 		color: #4183c4;
 }
 .container {
-	padding-right: 50px;
+	/*padding-right: 50px;*/
+	margin: 0 auto;
+}
+
+ul{
+	margin-left: 15px;
 }
 
 li {
@@ -85,7 +136,30 @@ li label {
     margin: 0;
 }
 
+#accordion{
+	border: 1px solid #d5d6d8;
+	border-radius: 10px;
+	padding:10px;
+}
+
+#accordion h3 {
+	border-bottom: 2px solid #d5d6d8;
+}
+
+#accordion li {
+	line-height: 2em;
+	border-bottom: 1px solid #d5d6d8;
+}
+
 .accordion-expand-holder {
-    text-align: center;
+    text-align: right;
     padding: 10px;
+}
+
+.accordion img{
+	max-height: 10px;
+}
+
+#preview {
+
 }

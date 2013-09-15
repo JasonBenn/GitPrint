@@ -10,12 +10,14 @@
   <script type="text/javascript" src="js/sort.js"></script> 
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/full.css">
+  <!-- <link rel="stylesheet" href="css/full.css"> -->
+  <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  <header><img src="images/octocat_300.png"><span class="logo">GitPrint</span></header>
 <div class="container"> 
   <div class="sidebar"> 
-  <ul id="sortable"><h2>Repos</h2>
+  <ul id="sortable"><h4>Repos</h4>
     <li class="ui-state-default">node-browserify</li>
     <li class="ui-state-default">dnode</li>
     <li class="ui-state-default">node-optimist</li>
@@ -29,40 +31,41 @@
 <div id="accordion" class="ui-accordion ui-widget ui-helper-reset">
 
     <h3 class="accordion-header ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all">
-        <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
-        Section 1
+        <img src="images/folder.png" height="15px"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+        root
     </h3>
     <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
-        <p>
-            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-        </p>
+        <ul>
+      <li><input type="checkbox" id="root-1" name="root-1" value="readme"><label for="root-1">README</label><span class="description">Description</span></li>
+      <li><input type="checkbox" id="root-2" name="root-2" value="index.js"><label for="root-2">index.js</label><span class="description">Description</span></li>
+      <li><input type="checkbox" id="root-3" name="root-3" value="package.json"><label for="root-3">package.json</label><span class="description">Description</span></li>
+    </ul>
     </div>
         <h3 class="accordion-header ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all">
-        <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
-        Section 2
+        <img src="images/folder.png" height="15px"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+        lib
     </h3>
      <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
-        <p>
-            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-        </p>
+        <div>
+      <ul>
+      <li><input type="checkbox" id="lib-1" name="el-1" value="stuff"><label for="lib-1">stuff</label></li>
+      <li><input type="checkbox" id="lib-2" name="el-2" value="stuff.js"><label for="lib-2">stuff.js</label></li>
+      <li><input type="checkbox" id="lib-3" name="root-3" value="stuff.json"><label for="lib-3">stuff.json</label></li>
+    </ul>
+    </div>
     </div>
         <h3 class="accordion-header ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all">
-        <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
-        Section 3
+        <img src="images/folder.png" height="15px"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+        examples
     </h3>
      <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
-        <p>
-            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-        </p>
+        <div>
+      <ul>
+        <li><input type="checkbox" id="bin-1" name="bin-1"><label for="lib-1">advanced.txt</label></li>
+        <li><input type="checkbox" id="bin-2" name="bin-2"><label for="lib-2">args.js</label></li>
+        <li><input type="checkbox" id="bin-3" name="bin-3"><label for="lib-3">cmd.js</label></li>
+      </ul>
+    </div>
     </div>
 </div>
 
