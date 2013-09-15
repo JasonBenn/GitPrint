@@ -7,8 +7,8 @@ $.get('https://api.github.com/repos/' + user + '/' + repo + '/commits' + '?clien
   var sha = (commits[0].sha);
 	$.get('https://api.github.com/repos/' + user + '/' + repo + '/git/trees/' + sha  + '?recursive=1&client_id=' + clientID + '&client_secret=' + clientSecret, function(data) {
 	  $.each(data.tree, function(index){
-	  	var fileUrl = data.tree[index].url;
-	  	$.get(fileUrl + '?client_id=' + clientID + '&client_secret=' + clientSecret, function(gitFile) {
+	  	var filePath = data.tree[index].path;
+	  	$.get('https://github.com/' + user + '/' + repo + '/blob/master/' + filePath, function(gitFile) {
 		  console.log(gitFile);
 			});
 	  });
