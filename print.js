@@ -1,8 +1,8 @@
 $('body').append('<div class="print-container"></div>')
 
-$('.pagehead-actions').on('click', '.add-book-btn', function(){
-  var repo = 'wtfsidtw'
-  var user = 'claubacher'
+$('.md-modal').on('click', /* PREVIEW BTN */, function(){
+  var repo = $('.js-current-repository').text()
+  var user = $('.author').text()
   var clientID = '62b11d2267425d40826b'
   var clientSecret = 'a50963d2c2bdbc5783e4df1939be09c52808e0b3'
 
