@@ -35,6 +35,7 @@ DropDown.prototype = {
 $(function() {
 
   var dd = new DropDown( $('#dd') );
+  var ee = new DropDown( $('#ee') );
 
   $(document).click(function() {
     // all dropdowns
