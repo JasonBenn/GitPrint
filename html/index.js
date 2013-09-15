@@ -1,6 +1,6 @@
 var modal = '<div class="container md-modal"> \
-<div class="header-cat"><img src="https://googledrive.com/host/0B9bg70URlInBR00zUW9PYnBWLWM/octocat_300.png"><span class="logo">GitPrint</span></div>  \
-	<div class="md-content"> \
+<div class="md-content"> \
+  <div class="header-cat"><img src="https://googledrive.com/host/0B9bg70URlInBR00zUW9PYnBWLWM/octocat_300.png"><span class="logo">GitPrint</span></div>  \
 	  <div class="sidebar"> \
       <h2 class="sidebar-heading">Repos</h2> \
 		  <ul id="sortable"> \
@@ -9,6 +9,8 @@ var modal = '<div class="container md-modal"> \
 				<li class="ui-state-default">node-optimist</li> \
 				<li class="ui-state-default">GitPrint</li> \
 		  </ul> \
+      <button class="preview">Preview</button> \
+      <button class="md-close">Close</button> \
 	  </div> \
 		<div id="repo-contents"> \
         <p class="accordion-expand-holder"> \
@@ -51,8 +53,6 @@ var modal = '<div class="container md-modal"> \
           </div> \
         </div> \
 		</div> \
-		<button class="preview">Preview</button> \
-	  <button class="md-close">Close</button> \
 	</div> \
 </div> \
 <div class="md-overlay"></div>'
