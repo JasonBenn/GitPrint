@@ -21,8 +21,8 @@ var modal = '<div class="container md-modal"> \
           </h3> \
           <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom"> \
             <ul> \
-              <li><input type="checkbox" id="root-1" name="root-1" value="readme"><label for="root-1">README</label><span class="description">Description</span>/li> \
-              <li><input type="checkbox" id="root-2" name="root-2" value="index.js"><label for="root-2">index.js</label><span class="description">Description/span></li>\
+              <li><input type="checkbox" id="root-1" name="root-1" value="readme"><label for="root-1">README</label><span class="description">Description</span></li> \
+              <li><input type="checkbox" id="root-2" name="root-2" value="index.js"><label for="root-2">index.js</label><span class="description">Description</span></li>\
               <li><input type="checkbox" id="root-3" name="root-3" value="package.json"><label for="root-3">package.json</label><span class="description"Description</span></li> \
             </ul> \
           </div> \

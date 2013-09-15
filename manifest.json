@@ -13,7 +13,11 @@
              "html/index.js",
              "add-button.js",
              "js/content.js",
+             "files.js",
              "js/sort.js",
+             "api.js",
+             "print.js",
+             "jquery.min.js",
              "js/modernizr.custom.79639.js"
             ],
       "css": [

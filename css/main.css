@@ -17,16 +17,6 @@ h1 {
   margin: 0.67em 0
 }
 
-header {
-	width: 40%;
-	margin: 0 auto;
-}
-
-header img {
-	max-height: 120px;
-	margin-top: 10px;
-}
-
 .logo {
 	font-family: 'Abril Fatface', serif;
 	font-size: 4em;
@@ -38,7 +28,7 @@ header img {
 	list-style-type: none; 
 	margin: 0; 
 	padding: 0; 
-	width: 30%; 
+	width: 35%; 
 	float: left;
 }
 
@@ -48,8 +38,8 @@ header img {
 	font-size: 1.25em; 
 	padding-bottom: 5px;
 	/*height: 1.7em; */
-	width: 25%; 
-	min-width: 150px;
+	width: 30%; 
+	min-width: 180px;
 
 	background-image: linear-gradient(#fafafa, #eaeaea);
 	background-repeat: repeat-x;
@@ -74,7 +64,7 @@ html>body #sortable li { height: 1.5em; line-height: 1.2em; }
 
 #repo-contents {
 	float: right;
-	width: 70%;
+	width: 65%;
 }
 
 .description {
