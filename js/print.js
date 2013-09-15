@@ -1,6 +1,6 @@
 $('body').append('<div class="print-container"></div>');
 
-$('.md-modal').on('click', /* PREVIEW BTN */, function(){
+$('.md-modal').on('click', $('.preview'), function(){
   var repo = $('.js-current-repository').text()
   var user = $('.author').text()
   var clientID = '62b11d2267425d40826b'

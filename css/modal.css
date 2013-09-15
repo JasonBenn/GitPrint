@@ -2,12 +2,12 @@
     -webkit-box-sizing: border-box;
     padding: 20px;
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 50%;
     width: 60%;
     min-width: 600px;
     /*min-width: 420px;*/
-    height: 60%;
+    height: 70%;
     overflow: scroll;
     z-index: 2000;
     visibility: hidden;

@@ -19,7 +19,7 @@ $.get('https://api.github.com/repos/' + user + '/' + repo + '/commits' + '?clien
   });
 });
 
-$('.md-modal').on('click', '.preview-btn', function(){
+$('.md-modal').on('click', '.preview', function(){
   $('body').html('<div class="print-container"><h1>' + user + ' / ' + repo + '</h1></div>')
   repoItems.forEach(function(repoItem) {
     if(repoItem.type === "file") {
