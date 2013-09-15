@@ -1,0 +1,91 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+body {
+  margin: 0
+}
+a: focus {
+  outline: thin dotted
+}
+a: active,a: hover {
+  outline: 0
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0
+}
+
+#sortable { 
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0; 
+	width: 30%; 
+	float: left;
+}
+
+#sortable li { 
+	margin: 5px 5px 5px 5px; 
+	padding: 5px; 
+	font-size: 1em; 
+	height: 1.5em; 
+	width: 25%; 
+	min-width: 150px;
+
+	background-image: linear-gradient(#fafafa, #eaeaea);
+	background-repeat: repeat-x;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+	border-bottom-color: #c5c5c5;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+	vertical-align: middle;
+	cursor: pointer;
+/*	position: relative;*/
+	padding: 7px 15px;
+	font-weight: bold;
+	color: #333;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+	white-space: nowrap;
+	background-color: #eaeaea;
+}
+
+#sortable h2 { margin-left: 15px;, margin-bottom: 15px;}
+html>body #sortable li { height: 1.5em; line-height: 1.2em; }
+.ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+
+#repo-contents {
+	float: left;
+	width: 70%;
+
+}
+
+h3 {
+		color: #4183c4;
+}
+.container {
+	padding-right: 50px;
+}
+
+li {
+	list-style-type: none;
+}
+
+li label {
+	margin-left: 10px;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.accordion-expand-holder {
+    text-align: center;
+    padding: 10px;
+}
