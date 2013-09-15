@@ -24,21 +24,23 @@ h1 {
 	/*vertical-align: top;*/
 }
 
-#sortable { 
-	list-style-type: none; 
-	margin: 0; 
-	padding: 0; 
-	width: 35%; 
+#sortable {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 35%;
 	float: left;
+  position: relative;
 }
 
-#sortable li { 
-	margin: 5px 5px 5px 5px; 
+#sortable li {
+	margin: 5px 5px 5px 5px;
 	/*padding: 5px; */
-	font-size: 1.25em; 
+	font-size: 1.25em;
 	padding-bottom: 5px;
-	/*height: 1.7em; */
-	width: 30%; 
+	height: 1.5em;
+  line-height: 1.2em;
+	width: 30%;
 	min-width: 180px;
 
 	background-image: linear-gradient(#fafafa, #eaeaea);
@@ -58,9 +60,9 @@ h1 {
 	background-color: #eaeaea;
 }
 
-#sortable h2 { margin-left: 15px;, margin-bottom: 15px;}
+.sidebar-heading { margin-left: 15px;, margin-bottom: 15px;}
 html>body #sortable li { height: 1.5em; line-height: 1.2em; }
-.ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+#sortable li.ui-state-highlight { height: 1.5em; line-height: 1.2em; background: #363636;}
 
 #repo-contents {
 	float: right;
