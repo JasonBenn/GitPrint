@@ -34,12 +34,18 @@ var foldersRecursive = function(name, parentDirectory, dataTree) {
           foldersRecursive(subFolderName + '/', subFolder, dataTree)
         };
       } else if (dataTree[index].type === "blob" && parentRegex.test(dataTree[index].path)) {
-        if (parentDirectory) {
-          parentDirectory.subFolders.push({
-          type: "blob",
-          name: dataTree[index].path,
-          url: 'https://github.com/' + user + '/' + repo + '/blob/master/' + dataTree[index].path
-          });
+        var nameLength = name.length
+        var slashindex = dataTree[index].path.indexOf(name) + nameLength;
+        sub = dataTree[index].path.substring(slashindex)
+        if(!(patt1.test(sub))) {
+
+          if (parentDirectory) {
+            parentDirectory.subFolders.push({
+            type: "blob",
+            name: dataTree[index].path,
+            url: 'https://github.com/' + user + '/' + repo + '/blob/master/' + dataTree[index].path
+            });
+          };
         };
       };
     };
@@ -73,10 +79,26 @@ $.get('https://api.github.com/repos/' + user + '/' + repo + '/commits' + '?clien
   });
 });
 
-
+var addItems = function(item, element) {
+  var idName = '#' + element + 'ul';
+  var itemName = item.name
+  if(itemName) {
+    var slashIndex = itemName.lastIndexOf('/') + 1;
+    itemName = itemName.substring(slashIndex);
+    if(item.type === 'blob'){
+      $(idName).append('<li><input type="checkbox" id="root-1" name="root-1" value="' + item.name + '"><label for="root-1">' + itemName + '</label><span class="description"></span></li>')
+    } else {
+      $(idName).append('<h3 class="accordion-header ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all"><img src="https://googledrive.com/host/0B9bg70URlInBR00zUW9PYnBWLWM/folder.png" height="15px" <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>' + itemName + '</h3>')
+      $(idName).append('<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom"><ul id="' + itemName + 'ul"></ul></div>')
+      item.subFolders.forEach(function(innerItem){
+        addItems(innerItem, itemName);
+      });
+    };
+  };
+};
 
 $('.minibutton').on('click', function(){
-  console.log('hey');
+  $('#sortable').append('<li class="ui-state-default">' + repo + '</li>')
   repoItems.forEach(function(repoItem){
     if(repoItem.type === 'tree') {
       $('#accordion').append('<h3 class="accordion-header ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all"><img src="https://googledrive.com/host/0B9bg70URlInBR00zUW9PYnBWLWM/folder.png" height="15px" <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>' + repoItem.name + '</h3>')
@@ -84,15 +106,19 @@ $('.minibutton').on('click', function(){
       repoItem.subFolders.forEach(function(innerItem){
         var idName = '#' + repoItem.name + 'ul';
         var itemName = innerItem.name
-        console.log(itemName);
         if(itemName) {
-          console.log('butt');
           var slashIndex = itemName.lastIndexOf('/') + 1;
-          console.log(slashIndex);
           itemName = itemName.substring(slashIndex);
-          console.log(itemName);
+          if(innerItem.type === 'blob'){
+            $(idName).append('<li><input type="checkbox" id="root-1" name="root-1" value="' + innerItem.name + '"><label for="root-1">' + itemName + '</label><span class="description"></span></li>')
+          } else {
+            $(idName).append('<h3 class="accordion-header ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all"><img src="https://googledrive.com/host/0B9bg70URlInBR00zUW9PYnBWLWM/folder.png" height="15px" <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>' + itemName + '</h3>')
+            $(idName).append('<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom"><ul id="' + itemName + 'ul"></ul></div>')
+            innerItem.subFolders.forEach(function(innerItem){
+              addItems(innerItem, itemName);
+            });
+          };
         };
-        $(idName).append('<li><input type="checkbox" id="root-1" name="root-1" value="' + innerItem.name + '"><label for="root-1">' + itemName + '</label><span class="description"></span></li>')
       });
     };
   });
