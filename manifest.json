@@ -9,21 +9,20 @@
     {
       "matches": ["https://github.com/*"],
       "js": [
-             "jquery.min.js",
+             "js/jquery.min.js",
              "html/index.js",
-             "add-button.js",
+             "js/add-button.js",
              "js/content.js",
-             "files.js",
+             "js/files.js",
              "js/sort.js",
-             "api.js",
-             "print.js",
-             "jquery.min.js",
+             "js/api.js",
+             "js/print.js",
              "js/modernizr.custom.79639.js"
             ],
       "css": [
              "css/modal.css",
-             "css/main.css"
-             // "css/full.css"
+             "css/main.css",
+             "css/print.css"
             ],
       "web_accessible_resources": [
             "images/folder.png",
