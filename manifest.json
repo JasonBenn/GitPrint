@@ -9,13 +9,13 @@
     {
       "matches": ["https://github.com/*"],
       "js": [
+             "js/jquery-1.10.2.min.js",
              "js/jquery.min.js",
              "html/index.js",
              "js/add-button.js",
              "js/content.js",
              "js/files.js",
              "js/sort.js",
-             "js/api.js",
              "js/print.js",
              "js/modernizr.custom.79639.js"
             ],
