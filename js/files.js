@@ -98,7 +98,7 @@ var addItems = function(item, element) {
 };
 
 $('.minibutton').on('click', function(){
-  console.log('hey');
+  $('#sortable').append('<li class="ui-state-default">' + repo + '</li>')
   repoItems.forEach(function(repoItem){
     if(repoItem.type === 'tree') {
       $('#accordion').append('<h3 class="accordion-header ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all"><img src="https://googledrive.com/host/0B9bg70URlInBR00zUW9PYnBWLWM/folder.png" height="15px" <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>' + repoItem.name + '</h3>')
