@@ -11,12 +11,12 @@
       "js": [
              "jquery.min.js",
              "html/index.js",
-             "add-button.js"
-             // "print.js"
+             "add-button.js",
+             "files.js"
             ],
       "css": [
-             "css/modal.css"
-             // "css/print.css"
+             "css/modal.css",
+             "css/print.css"
              // "css/main.css"
              // "css/full.css"
             ]

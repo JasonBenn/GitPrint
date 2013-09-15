@@ -9,6 +9,7 @@ var modal = '<div class="container md-modal"> \
 		  </ul> \
 	  </div> \
 		<div id="repo-contents"> \
+		  <a href="#print" class="preview-btn">PREVIEW</a> \
 			<p class="accordion-expand-holder"> \
 				<a class="accordion-expand-all" href="#">Expand all</a> \
 			</p> \
