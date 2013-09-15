@@ -12,14 +12,22 @@
              "jquery.min.js",
              "html/index.js",
              "add-button.js",
-             "files.js"
+             "js/content.js",
+             "files.js",
+             "js/sort.js",
+             "api.js",
+             "print.js",
+             "jquery.min.js",
+             "js/modernizr.custom.79639.js"
             ],
       "css": [
              "css/modal.css",
-             "css/print.css"
-             // "css/main.css"
+             "css/main.css"
              // "css/full.css"
-            ]
+            ],
+      "web_accessible_resources": [
+            "images/folder.png",
+            "images/octocat_300.png"]
     }
   ]
 }

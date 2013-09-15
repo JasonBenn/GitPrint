@@ -6,10 +6,10 @@ html {
 body {
   margin: 0
 }
-a:focus {
+a: focus {
   outline: thin dotted
 }
-a:active, a:hover {
+a: active,a: hover {
   outline: 0
 }
 h1 {
@@ -17,21 +17,29 @@ h1 {
   margin: 0.67em 0
 }
 
-#sortable {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	width: 30%;
+.logo {
+	font-family: 'Abril Fatface', serif;
+	font-size: 4em;
+	baseline-shift : sub;
+	/*vertical-align: top;*/
+}
+
+#sortable { 
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0; 
+	width: 35%; 
 	float: left;
 }
 
-#sortable li {
-	margin: 5px 5px 5px 5px;
-	padding: 5px;
-	font-size: 1em;
-	height: 1.5em;
-	width: 25%;
-	min-width: 150px;
+#sortable li { 
+	margin: 5px 5px 5px 5px; 
+	/*padding: 5px; */
+	font-size: 1.25em; 
+	padding-bottom: 5px;
+	/*height: 1.7em; */
+	width: 30%; 
+	min-width: 180px;
 
 	background-image: linear-gradient(#fafafa, #eaeaea);
 	background-repeat: repeat-x;
@@ -55,16 +63,49 @@ html>body #sortable li { height: 1.5em; line-height: 1.2em; }
 .ui-state-highlight { height: 1.5em; line-height: 1.2em; }
 
 #repo-contents {
-	float: left;
-	width: 70%;
+	float: right;
+	width: 65%;
+}
 
+.description {
+	display: inline-block;
+	margin-left: 75px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1
+}
+h1 {
+  font-size: 30px
+}
+h2 {
+  font-size: 21px
+}
+h3 {
+  font-size: 16px
+}
+h4 {
+  font-size: 14px
+}
+h5 {
+  font-size: 12px
+}
+h6 {
+  font-size: 11px
 }
 
 h3 {
 		color: #4183c4;
 }
 .container {
-	padding-right: 50px;
+	/*padding-right: 50px;*/
+	margin: 0 auto;
+}
+
+ul{
+	margin-left: 15px;
 }
 
 li {
@@ -85,7 +126,55 @@ li label {
     margin: 0;
 }
 
+#accordion{
+	border: 1px solid #d5d6d8;
+	border-radius: 10px;
+	padding:10px;
+}
+
+#accordion h3 {
+	border-bottom: 2px solid #d5d6d8;
+	text-align: left;
+}
+
+#accordion li {
+	line-height: 2em;
+	border-bottom: 1px solid #d5d6d8;
+}
+
 .accordion-expand-holder {
-    text-align: center;
+    text-align: right;
     padding: 10px;
+}
+
+.accordion img{
+	max-height: 10px;
+}
+
+.accordion-header h3{
+	font-size: 1em;
+}
+
+.preview {
+    position: absolute;
+    bottom: 25px;
+    /*float: right;*/
+    margin-top: 100px;
+    margin-left: 25px;
+	background-repeat: repeat-x;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+	border-bottom-color: #c5c5c5;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+	vertical-align: middle;
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	padding: 7px 15px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFF;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+	white-space: nowrap;
+	background-color: #6CC644;
 }

@@ -1,16 +1,20 @@
 .md-modal {
+    -webkit-box-sizing: border-box;
+    padding: 20px;
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 50%;
-    max-width: 630px;
-    min-width: 320px;
-    height: auto;
+    width: 60%;
+    min-width: 600px;
+    /*min-width: 420px;*/
+    height: 60%;
     overflow: scroll;
     z-index: 2000;
     visibility: hidden;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateX(-50%) translateY(-50%);
+    background-color: #fff;
+    border-color: 8px solid #333;
 }
 
 .md-show {
@@ -46,7 +50,7 @@
     opacity: 1;
 }
 
-.md-content h3 {
+/*.md-content h3 {
     margin: 0;
     padding: 0.4em;
     text-align: center;
@@ -55,9 +59,9 @@
     opacity: 0.8;
     background-color: white;
     border-radius: 3px 3px 0 0;
-}
+}*/
 
-.md-content > div {
+/*.md-content > div {
     padding: 15px 40px 30px;
     margin: 0;
     background-color: white;
@@ -83,4 +87,38 @@
     display: block;
     margin: 0 auto;
     font-size: 0.8em;
+}*/
+
+.md-close {
+    position: absolute;
+    bottom: 25px;
+    /*float: right;*/
+    margin-top: 100px;
+    margin-left: 25px;
+    background-image: linear-gradient(#fafafa, #eaeaea);
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    border-bottom-color: #c5c5c5;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    vertical-align: middle;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+    white-space: nowrap;
+    background-color: #eaeaea;
+}
+
+.header-cat {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.header-cat img {
+    max-height: 120px;
+    margin-top: 10px;
 }
