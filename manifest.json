@@ -10,7 +10,13 @@
       "matches": ["https://github.com/*"],
       "js": [
              "jquery.min.js",
+             "html/index.js",
              "add-button.js"
+            ],
+      "css": [
+             "css/modal.css"
+             // "css/main.css"
+             // "css/full.css"
             ]
     }
   ]
